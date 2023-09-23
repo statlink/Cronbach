@@ -1,0 +1,9 @@
+#useDynLib(fsn, .registration = TRUE)
+
+importFrom("stats", cov, qnorm)
+importFrom("boot", boot, boot.ci)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+
