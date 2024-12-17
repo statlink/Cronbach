@@ -23,16 +23,16 @@ License: \tab GPL-2\cr
 Michail Tsagris \email{mtsagris@uoc.gr}, Constantinos Frangos \email{kfragkos@outlook.com} and Christos Frangos \email{cfragos@teiath.gr}.
 }
 
-\section{Maintainers }{
+\section{Maintainers}{
 Michail Tsagris <mtsagris@uoc.gr>
 }
 
 \references{
-Cronbach L. (1951). "Coefficient alpha and the internal structure of tests".
-Psychometrika, 16(3): 297-334.
+Cronbach L. (1951). Coefficient alpha and the internal structure of tests.
+Psychometrika, 16(3): 297--334.
 
 Tsagris M., Frangos C.C. and Frangos C.C. (2013).
-"Confidence intervals for Cronbach's reliability coefficient".
+Confidence intervals for Cronbach's reliability coefficient.
 Recent Techniques in Educational Science, 14-16 May, Athens, Greece.
 http://www.academia.edu/download/32613010/Cronbachs_alpha.pdf
 }
