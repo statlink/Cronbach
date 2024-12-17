@@ -37,10 +37,12 @@ Recent Techniques in Educational Science, 14-16 May, Athens, Greece.
 http://www.academia.edu/download/32613010/Cronbachs_alpha.pdf
 }
 
-%\note{
-%Acknowledgments:
-%
-%}
+\note{
+Acknowledgments:
+
+Michai Tsagris would like to express his gratitude to Linus Banse for spotting a bug in the function
+cronfree.ci() when type is "whalen" which has now been fixed.
+}
 
 
 
