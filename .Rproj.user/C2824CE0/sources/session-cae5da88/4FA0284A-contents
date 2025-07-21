@@ -1,0 +1,9 @@
+cronbach <- function(x) {
+  #s <- Rfast::cova(x)
+  #p <- dim(s)[1]
+  #p / (p - 1) * (1 - sum( diag(s) ) / sum(s) )
+  p <- dim(x)[2]
+  s <- sum( Rfast::colVars(x) )
+  st <- Rfast::Var( Rfast::rowsums(x) )
+  p / (p - 1) * (1 - s / st )
+}
