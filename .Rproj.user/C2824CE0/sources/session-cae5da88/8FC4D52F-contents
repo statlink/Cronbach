@@ -1,0 +1,12 @@
+x2 <- cbind( Rfast::rowsums(x), x )
+ab <- numeric(B)
+for (i in 1:B) {
+  ind <- Rfast2::Sample.int(n, n, replace = TRUE)
+  y <- x2[ind, ]
+  s <- Rfast::colVars(y)
+  ab[i] <- 1 - sum(s[-1]) / s[1]
+}
+ab <- p / (p - 1) * ab
+s2 <- sum( (ab - a)^2 ) / B
+ta <- qt( conf + 0.5 * (1 - conf), B )
+ci <- c(a - ta * sqrt(s2), a + ta * sqrt(s2) )

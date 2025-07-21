@@ -1,0 +1,16 @@
+aboot <- function(x, B = 1000) {
+  
+  n <- dim(x)[1]
+  p <- dim(x)[2]
+  x2 <- cbind( Rfast::rowsums(x), x )
+  s <- Rfast::colVars(x2) 
+  a <- p / (p - 1) * (1 - sum(s[-1]) / s[1] )
+  ab <- numeric(B)
+  for (i in 1:B) {
+    ind <- Rfast2::Sample.int(n, n, replace = TRUE)
+    y <- x2[ind, ]
+    s <- Rfast::colVars(y) 
+    ab[i] <- 1 - sum(s[-1]) / s[1] 
+  }
+  p / (p - 1) * quantile(ab, probs = c(0.025, 0.975))
+}

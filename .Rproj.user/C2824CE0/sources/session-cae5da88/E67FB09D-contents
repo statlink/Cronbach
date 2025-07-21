@@ -20,7 +20,7 @@ A numerical matrix with the data.
 The confidence level of the interval
 }
 \item{type}{
-The type of the confidence interval, "logit", "zyl", "boot", "bca.boot", or "cheap.boot. See details for more information.
+The type of the confidence interval, "logit", "zyl", "boot", or "bca.boot". See details for more information.
 }
 \item{B}{
 This relevant only for the bootstrap based confidence interval. It is the number of bootstrap samples to generate.
@@ -28,7 +28,7 @@ This relevant only for the bootstrap based confidence interval. It is the number
 }
 
 \details{
-This function contains some confidence intervals for Cronbach's alpha as described in Tsagris, Frangos and Frangos (2013). In particular, the type "zyl" refers to estimating the variance of alpha as suggested by van Zyl J., Neudecker H. and Nel D. (2000) and then constructing the classical confidence interval. The type "logit" computes the logit transformation and then approximates the variance based on the Delta method. This makes use of the variance as computed by van Zyl J., Neudecker H. and Nel D. (2000). The type "boot" computes the classical percentile type of bootstrap, whereas the "bca.boot" computes BCa confidence intervals. Finally, the "cheap.boot" option computes the cheap bootstrap confidence intervals proposed by Lam (2022). In this case, the B needs not be more than 100, even 50 should be enough.
+This function contains some confidence intervals for Cronbach's alpha as described in Tsagris, Frangos and Frangos (2013). In particular, the type "zyl" refers to estimating the variance of alpha as suggested by van Zyl J., Neudecker H. and Nel D. (2000) and then constructing the classical confidence interval. The type "logit" computes the logit transformation and then approximates the variance based on the Delta method. This makes use of the variance as computed by van Zyl J., Neudecker H. and Nel D. (2000). The type "boot" computes the classical percentile type of bootstrap, whereas the "bca.boot" computes BCa confidence intervals.
 }
 
 \value{
@@ -46,8 +46,6 @@ Efron B. and Tibshirani, R.J. (1993). An introduction to the bootstrap. Chapman 
 
 Cronbach L. (1951). Coefficient alpha and the internal structure of tests.
 Psychometrika, 16(3): 297--334.
-
-Lam H. (2022). A cheap bootstrap method for fast inference. arXiv preprint.
 }
 
 \author{
